@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: violet;
+}
+.nav-bar{
+    display: flex;
+    float: left;
+    width: 13%;
+    height: 100vh;
+    background-color: darkslategray;
+}
+img{
+    width: 150px;
+    margin-left: 1em;
+}
+.nav-bar ul{
+     list-style: none;
+}
+.but{
+    background-color: chartreuse;
+    cursor: pointer;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    margin-top: 1em;
+    margin-left: 2em;
+}
+.but hover{
+    transform: 3;
+}
+
+.main{
+display:block;
+text-align:center;
+    }
+.pagin{
+    display:block;
+    padding-top:5em;
+    }
+
+.buttom{
+    width:550px;
+    height:70vh;
+}
+.image{
+    width:500px;
+}

@@ -1,0 +1,23 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'main_app/style/body_style.css' %}" type="text/css">
+</head>
+<body>
+    {% if request.user.is_authenticated %}
+    <div class="left_side">
+      <button><a href="{% url 'home' %}"><h2>К другим новостям</h2></a></button>
+    </div>
+    <div class="main">
+        {{ post.body|linebreaks }}
+    </div>
+    {% else %}
+    <a href="{% url 'aut' %}"><h2> Пожалуйста, пройдите авторизацию</h2></a>
+    {% endif %}
+
+
+</body>
+</html>
